@@ -8,7 +8,7 @@
 import Foundation
 
 
-struct Framework: Identifiable {
+struct Framework: Hashable, Identifiable {
     var id = UUID()
     let name: String
     let imageName: String
