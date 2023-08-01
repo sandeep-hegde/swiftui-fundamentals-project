@@ -14,8 +14,15 @@ struct FrameworkGridView: View {
                                GridItem(.flexible())]
     
     var body: some View {
-        LazyVGrid(columns: columns) {
-            FrameworkTitleView(frameWorkName: "App Clips", frameWorkImageName: "app-clip")
+        NavigationView {
+            ScrollView {
+                LazyVGrid(columns: columns) {
+                    ForEach(MockData.frameworks) { framework in
+                        FrameworkTitleView(framework: framework)
+                    }
+                }
+            }
+            .navigationTitle(" Frameworks")
         }
     }
 }
@@ -34,19 +41,19 @@ struct ContentView_Previews: PreviewProvider {
 
 struct FrameworkTitleView: View {
     
-    var frameWorkName: String
-    var frameWorkImageName: String
+    let framework: Framework
     
     var body: some View {
         VStack {
-            Image(frameWorkImageName)
+            Image(framework.imageName)
                 .resizable()
                 .frame(width: 90, height: 90)
-            Text(frameWorkName)
+            Text(framework.name)
                 .font(.title2)
                 .fontWeight(.medium)
                 .scaledToFit()
                 .minimumScaleFactor(0.6)
         }
+        .padding()
     }
 }
