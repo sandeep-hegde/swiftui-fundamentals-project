@@ -17,7 +17,6 @@
 		2CFBF40C2A79285200B20EB5 /* FrameworkGridViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CFBF40B2A79285200B20EB5 /* FrameworkGridViewModel.swift */; };
 		2CFBF40E2A79300C00B20EB5 /* SafariView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CFBF40D2A79300B00B20EB5 /* SafariView.swift */; };
 		2CFBF4102A79370E00B20EB5 /* FrameworkTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CFBF40F2A79370E00B20EB5 /* FrameworkTitleView.swift */; };
-		2CFBF4122A7937DE00B20EB5 /* XDismissButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CFBF4112A7937DE00B20EB5 /* XDismissButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,7 +31,6 @@
 		2CFBF40B2A79285200B20EB5 /* FrameworkGridViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkGridViewModel.swift; sourceTree = "<group>"; };
 		2CFBF40D2A79300B00B20EB5 /* SafariView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariView.swift; sourceTree = "<group>"; };
 		2CFBF40F2A79370E00B20EB5 /* FrameworkTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkTitleView.swift; sourceTree = "<group>"; };
-		2CFBF4112A7937DE00B20EB5 /* XDismissButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XDismissButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,7 +129,6 @@
 			isa = PBXGroup;
 			children = (
 				2CFBF4092A7923DA00B20EB5 /* AFButton.swift */,
-				2CFBF4112A7937DE00B20EB5 /* XDismissButton.swift */,
 			);
 			path = Buttons;
 			sourceTree = "<group>";
@@ -224,7 +221,6 @@
 			files = (
 				2CFBF4082A790BFD00B20EB5 /* FrameworkDetailView.swift in Sources */,
 				2C443BD52A784423001373D3 /* FrameworkGridView.swift in Sources */,
-				2CFBF4122A7937DE00B20EB5 /* XDismissButton.swift in Sources */,
 				2CFBF4042A78F6FE00B20EB5 /* Framework.swift in Sources */,
 				2CFBF40A2A7923DA00B20EB5 /* AFButton.swift in Sources */,
 				2C443BD32A784423001373D3 /* Apple_Frameworks_AppApp.swift in Sources */,
