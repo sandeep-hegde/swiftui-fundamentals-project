@@ -23,7 +23,7 @@ struct Appetizer: Decodable, Identifiable {
 
 
 // Response object to handle JSON structure
-struct AppetizerResponse {
+struct AppetizerResponse: Decodable {
     let request: [Appetizer]
 }
 
