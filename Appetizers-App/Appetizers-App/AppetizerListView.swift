@@ -15,11 +15,14 @@ struct AppetizerListView: View {
         //        }
         //
         NavigationStack {
-            Text("Appetizer List View")
-                .navigationTitle("🍟 Appetizers")
+            List(MockData.appetizer) { appetizer in
+                AppetizerListCellView(appetizer: appetizer)
+            }
+            .navigationTitle("🍟 Appetizers")
         }
     }
 }
+
 
 
 
