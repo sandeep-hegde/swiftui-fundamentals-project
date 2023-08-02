@@ -14,6 +14,7 @@
 		2C2439C52A7A254000A4B54B /* AppetizerListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2439C42A7A254000A4B54B /* AppetizerListView.swift */; };
 		2C2439C72A7A255D00A4B54B /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2439C62A7A255D00A4B54B /* AccountView.swift */; };
 		2C2439C92A7A257000A4B54B /* OrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2439C82A7A257000A4B54B /* OrderView.swift */; };
+		2C2439CB2A7A37F100A4B54B /* AppetizerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2439CA2A7A37F100A4B54B /* AppetizerModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		2C2439C42A7A254000A4B54B /* AppetizerListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerListView.swift; sourceTree = "<group>"; };
 		2C2439C62A7A255D00A4B54B /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
 		2C2439C82A7A257000A4B54B /* OrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderView.swift; sourceTree = "<group>"; };
+		2C2439CA2A7A37F100A4B54B /* AppetizerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				2C2439B62A7A24CD00A4B54B /* Appetizers_AppApp.swift */,
 				2C2439B82A7A24CD00A4B54B /* AppetixerTabView.swift */,
 				2C2439C42A7A254000A4B54B /* AppetizerListView.swift */,
+				2C2439CA2A7A37F100A4B54B /* AppetizerModel.swift */,
 				2C2439C62A7A255D00A4B54B /* AccountView.swift */,
 				2C2439C82A7A257000A4B54B /* OrderView.swift */,
 				2C2439BA2A7A24CE00A4B54B /* Assets.xcassets */,
@@ -146,6 +149,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C2439CB2A7A37F100A4B54B /* AppetizerModel.swift in Sources */,
 				2C2439C72A7A255D00A4B54B /* AccountView.swift in Sources */,
 				2C2439B92A7A24CD00A4B54B /* AppetixerTabView.swift in Sources */,
 				2C2439B72A7A24CD00A4B54B /* Appetizers_AppApp.swift in Sources */,
