@@ -17,12 +17,13 @@ final class NetworkManager {
     private init() {}
     
     func getAppetizers(completed: @escaping (Result<[Appetizer], APError>) -> Void) {
+        // To check whether URL works
         guard let url = URL(string: appetizerURL) else {
             completed(.failure(.invalidURL))
             return
         }
         
-        
+        // Checking the errors
         let task = URLSession.shared.dataTask(with: URLRequest(url: url)) { data, response, error in
             if let _ = error {
                 completed(.failure(.unableToComplete))
@@ -41,7 +42,7 @@ final class NetworkManager {
                 return
             }
             
-            
+            // Parsing the data
             do {
                 let decoder = JSONDecoder()
                 let decodResponse = try decoder.decode(AppetizerResponse.self, from: data)
