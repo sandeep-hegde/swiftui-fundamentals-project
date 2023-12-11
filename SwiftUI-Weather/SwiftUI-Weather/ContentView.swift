@@ -53,15 +53,11 @@ struct ContentView: View {
 }
 
 
-
-
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
     }
 }
-
-
 
 
 struct WeatherDayView: View {
@@ -73,21 +69,19 @@ struct WeatherDayView: View {
     var body: some View {
         VStack {
             Text(dayOfWeek)
-                .font(.system(size: 16, weight: .medium, design: .default))
-                .foregroundColor(.white)
+                .font(.system(size: 16, weight: .medium, design: .rounded))
+                .foregroundStyle(.white)
             Image(systemName: imageName)
                 .symbolRenderingMode(.multicolor)
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 .frame(width: 40, height: 40)
             Text("\(temperature)°")
-                .font(.system(size: 28, weight: .medium, design: .default))
-                .foregroundColor(.white)
+                .font(.system(size: 28, weight: .medium, design: .rounded))
+                .foregroundStyle(.white)
         }
     }
 }
-
-
 
 
 struct BackgroundView: View {
@@ -96,12 +90,10 @@ struct BackgroundView: View {
     
     var body: some View {
         ContainerRelativeShape()
-            .fill(isNight ? Color.black.gradient : Color.blue.gradient)
-        .ignoresSafeArea()
+            .fill(isNight ? Color.black.gradient : Color.indigo.gradient)//.opacity(0.8)
+            .ignoresSafeArea()
     }
 }
-
-
 
 
 struct CityTextView: View {
@@ -110,13 +102,11 @@ struct CityTextView: View {
     
     var body: some View {
         Text(cityName)
-            .font(.system(size: 32, weight: .medium, design: .default))
-            .foregroundColor(.white)
+            .font(.system(size: 32, weight: .medium, design: .rounded))
+            .foregroundStyle(.white)
             .padding()
     }
 }
-
-
 
 
 struct MainWeatherStatusView: View {
@@ -127,14 +117,14 @@ struct MainWeatherStatusView: View {
     var body: some View {
         VStack(spacing: 8) {
             Image(systemName: imageName)
-                .renderingMode(.original)
+                .symbolRenderingMode(.multicolor)
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 .frame(width: 180, height: 180)
             
             Text("\(temperature)°")
-                .font(.system(size: 70, weight: .medium))
-                .foregroundColor(.white)
+                .font(.system(size: 70, weight: .medium, design: .rounded))
+                .foregroundStyle(.white)
         }
         .padding(.bottom, 40)
     }
