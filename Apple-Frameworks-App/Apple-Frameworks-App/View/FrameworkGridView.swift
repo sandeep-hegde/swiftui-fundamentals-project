@@ -9,7 +9,7 @@ import SwiftUI
 
 struct FrameworkGridView: View {
     
-    @StateObject var viewModel = FrameworkGridViewModel()
+    @ObservedObject var viewModel = FrameworkGridViewModel()
     
     var body: some View {
         NavigationStack {
@@ -28,6 +28,7 @@ struct FrameworkGridView: View {
                 framework in FrameworkDetailView(framework: framework)
             }
         }
+        .tint(Color(.label))
     }
 }
 

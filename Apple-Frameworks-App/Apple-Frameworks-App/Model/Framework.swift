@@ -17,8 +17,6 @@ struct Framework: Hashable, Identifiable {
 }
 
 
-
-
 struct MockData {
     
     static let sampleFramework = Framework(name: "ARKit",
@@ -46,7 +44,7 @@ struct MockData {
                   imageName: "catalyst",
                   urlString: "https://developer.apple.com/mac-catalyst",
                   description: "Native Mac apps built with Mac Catalyst can share code with your iPad apps, and you can add more features just for Mac. In macOS Big Sur, you can create even more powerful versions of your apps and take advantage of every pixel on the screen by running them at native Mac resolution.\n\nApps built with Mac Catalyst can now be fully controlled using just the keyboard, access more iOS frameworks, and take advantage of the all-new look of macOS Big Sur. There’s never been a better time to turn your iPad app into a powerful Mac app."),
-
+        
         Framework(name: "ClassKit",
                   imageName: "classkit",
                   urlString: "https://developer.apple.com/classkit",

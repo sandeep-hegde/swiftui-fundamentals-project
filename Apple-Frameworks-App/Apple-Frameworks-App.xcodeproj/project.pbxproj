@@ -63,12 +63,12 @@
 		2C443BD12A784423001373D3 /* Apple-Frameworks-App */ = {
 			isa = PBXGroup;
 			children = (
-				2CFBF41A2A7939C400B20EB5 /* UIKit Components */,
-				2CFBF4172A79396900B20EB5 /* Views */,
 				2CFBF4162A79393B00B20EB5 /* Model */,
-				2CFBF4132A7938BD00B20EB5 /* Screens */,
-				2C443BD62A784425001373D3 /* Assets.xcassets */,
+				2CFBF4172A79396900B20EB5 /* View */,
+				2CFBF4132A7938BD00B20EB5 /* ViewModel */,
+				2CFBF41A2A7939C400B20EB5 /* UIKit Components */,
 				2C443BD22A784423001373D3 /* Apple_Frameworks_AppApp.swift */,
+				2C443BD62A784425001373D3 /* Assets.xcassets */,
 				2C443BD82A784425001373D3 /* Preview Content */,
 			);
 			path = "Apple-Frameworks-App";
@@ -82,30 +82,12 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		2CFBF4132A7938BD00B20EB5 /* Screens */ = {
+		2CFBF4132A7938BD00B20EB5 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				2CFBF4142A7938C600B20EB5 /* FrameworkGridView */,
-				2CFBF4152A7938FD00B20EB5 /* FrameworkDetailView */,
-			);
-			path = Screens;
-			sourceTree = "<group>";
-		};
-		2CFBF4142A7938C600B20EB5 /* FrameworkGridView */ = {
-			isa = PBXGroup;
-			children = (
-				2C443BD42A784423001373D3 /* FrameworkGridView.swift */,
 				2CFBF40B2A79285200B20EB5 /* FrameworkGridViewModel.swift */,
 			);
-			path = FrameworkGridView;
-			sourceTree = "<group>";
-		};
-		2CFBF4152A7938FD00B20EB5 /* FrameworkDetailView */ = {
-			isa = PBXGroup;
-			children = (
-				2CFBF4072A790BFD00B20EB5 /* FrameworkDetailView.swift */,
-			);
-			path = FrameworkDetailView;
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		2CFBF4162A79393B00B20EB5 /* Model */ = {
@@ -116,27 +98,13 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		2CFBF4172A79396900B20EB5 /* Views */ = {
+		2CFBF4172A79396900B20EB5 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				2CFBF4192A7939A200B20EB5 /* View */,
-				2CFBF4182A79397100B20EB5 /* Buttons */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		2CFBF4182A79397100B20EB5 /* Buttons */ = {
-			isa = PBXGroup;
-			children = (
-				2CFBF4092A7923DA00B20EB5 /* AFButton.swift */,
-			);
-			path = Buttons;
-			sourceTree = "<group>";
-		};
-		2CFBF4192A7939A200B20EB5 /* View */ = {
-			isa = PBXGroup;
-			children = (
+				2C443BD42A784423001373D3 /* FrameworkGridView.swift */,
 				2CFBF40F2A79370E00B20EB5 /* FrameworkTitleView.swift */,
+				2CFBF4092A7923DA00B20EB5 /* AFButton.swift */,
+				2CFBF4072A790BFD00B20EB5 /* FrameworkDetailView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -177,7 +145,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1430;
-				LastUpgradeCheck = 1430;
+				LastUpgradeCheck = 1510;
 				TargetAttributes = {
 					2C443BCE2A784423001373D3 = {
 						CreatedOnToolsVersion = 14.3.1;
@@ -269,6 +237,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -329,6 +298,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -355,14 +325,15 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Apple-Frameworks-App/Preview Content\"";
-				DEVELOPMENT_TEAM = G324H38H35;
+				DEVELOPMENT_TEAM = 2RSSAT6Q24;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -370,9 +341,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "sandeep.hegde.com.Apple-Frameworks-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -384,14 +358,15 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Apple-Frameworks-App/Preview Content\"";
-				DEVELOPMENT_TEAM = G324H38H35;
+				DEVELOPMENT_TEAM = 2RSSAT6Q24;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -399,9 +374,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "sandeep.hegde.com.Apple-Frameworks-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
