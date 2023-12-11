@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct AFButton: View {
+    
     var titile: String
     
     var body: some View {
@@ -16,8 +17,8 @@ struct AFButton: View {
             .fontWeight(.medium)
             .frame(width: 280, height: 50)
             .background(.red)
-            .foregroundColor(.white)
-            .cornerRadius(15)
+            .foregroundStyle(.white)
+            .clipShape(.rect(cornerRadius: 15))
     }
 }
 

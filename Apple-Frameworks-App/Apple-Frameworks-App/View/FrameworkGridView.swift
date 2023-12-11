@@ -23,6 +23,7 @@ struct FrameworkGridView: View {
                 }
             }
             .navigationTitle(" Frameworks")
+            .background( LinearGradient(gradient: Gradient(colors: [.mint, .white]), startPoint: .topTrailing, endPoint: .bottomLeading).opacity(0.3))
             .navigationDestination(for: Framework.self) {
                 framework in FrameworkDetailView(framework: framework)
             }

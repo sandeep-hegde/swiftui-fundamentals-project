@@ -14,8 +14,26 @@ struct FrameworkDetailView: View {
     
     var body: some View {
         VStack {
+            VStack() {
+                HStack() {
+                    Spacer()
+                    
+                    Button {
+                        
+                    } label: {
+                        Image(systemName: "xmark")
+                            .foregroundStyle(Color(.label))
+                            .imageScale(.large)
+                            .frame(width: 44, height: 44)
+                    }
+                }
+            }
+            .padding()
+    
             Spacer()
+            
             FrameworkTitleView(framework: framework)
+            
             Text(framework.description)
                 .font(.body)
                 .padding()
@@ -29,6 +47,7 @@ struct FrameworkDetailView: View {
             }
             Spacer()
         }
+        .background(Color.mint.gradient.opacity(0.2))
         .sheet(isPresented: $isShowingSafariView, content: { SafariView(url: URL(string: framework.urlString) ?? URL(string: "www.apple.com")!)})
     }
 }
