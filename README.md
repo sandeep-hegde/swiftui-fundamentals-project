@@ -8,4 +8,9 @@ Within this repository, you will find the four projects I've created throughout 
 
 ## Weather App
 
-![Classic Collage Weather App](https://github.com/sandeep-hegde/swiftui-fundamentals-project/assets/24915457/70f19b96-5839-4f03-a60c-0a1ac09a5046)
+![Weather App](https://github.com/sandeep-hegde/swiftui-fundamentals-project/assets/24915457/09bc51e4-a461-4b37-843b-9e39b49ca9c8)
+
+
+## Apple Framework App
+
+![Apple Framework App](https://github.com/sandeep-hegde/swiftui-fundamentals-project/assets/24915457/e2d9bec2-4b70-4752-a94b-479b4b9ec893)
