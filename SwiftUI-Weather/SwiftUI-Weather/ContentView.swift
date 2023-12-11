@@ -90,7 +90,7 @@ struct BackgroundView: View {
     
     var body: some View {
         ContainerRelativeShape()
-            .fill(isNight ? Color.black.gradient : Color.indigo.gradient)//.opacity(0.8)
+            .fill(isNight ? Color.black.gradient : Color.blue.gradient)//.opacity(0.8)
             .ignoresSafeArea()
     }
 }
