@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct AppetixerTabView: View {
+struct AppetizerTabView: View {
     var body: some View {
         TabView {
             AppetizerListView()
@@ -37,6 +37,6 @@ struct AppetixerTabView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        AppetixerTabView()
+        AppetizerTabView()
     }
 }

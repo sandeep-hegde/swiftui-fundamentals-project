@@ -14,9 +14,9 @@ struct AppetizerListCellView: View {
         HStack {
             Image("asian-flank-steak")
                 .resizable()
-                .aspectRatio(contentMode: .fit)
+                .scaledToFit()
                 .frame(width: 120, height: 90)
-                .cornerRadius(10)
+                .clipShape(.rect(cornerRadius: 10))
             
             VStack(alignment: .leading, spacing: 5.0) {
                 Text(appetizer.name)
@@ -24,7 +24,7 @@ struct AppetizerListCellView: View {
                     .fontWeight(.regular)
                 
                 Text("$\(appetizer.price, specifier: "%.2f")")
-                    .foregroundColor(.secondary)
+                    .foregroundStyle(.secondary)
                     .fontWeight(.semibold)
             }
             .padding(.leading)
