@@ -74,13 +74,10 @@
 			isa = PBXGroup;
 			children = (
 				2C2439B62A7A24CD00A4B54B /* Appetizers_AppApp.swift */,
-				2C2439B82A7A24CD00A4B54B /* AppetixerTabView.swift */,
-				2C2439CA2A7A37F100A4B54B /* AppetizerModel.swift */,
-				2C2439C42A7A254000A4B54B /* AppetizerListView.swift */,
-				2C2439D22A7A560600A4B54B /* AppetizerListViewModel.swift */,
+				2CC224752B2B583200ED2CD3 /* Model */,
+				2CC224762B2B583D00ED2CD3 /* View */,
+				2CC224772B2B584E00ED2CD3 /* ViewModel */,
 				2C2439CC2A7A408F00A4B54B /* AppetizerListCellView.swift */,
-				2C2439C62A7A255D00A4B54B /* AccountView.swift */,
-				2C2439C82A7A257000A4B54B /* OrderView.swift */,
 				2C2439CE2A7A4B9B00A4B54B /* NetworkManager.swift */,
 				2C2439D02A7A4D0600A4B54B /* APError.swift */,
 				2C0607DA2A7F8D9B00562412 /* Alert.swift */,
@@ -98,6 +95,33 @@
 				2C2439BD2A7A24CE00A4B54B /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		2CC224752B2B583200ED2CD3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2C2439CA2A7A37F100A4B54B /* AppetizerModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2CC224762B2B583D00ED2CD3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2C2439B82A7A24CD00A4B54B /* AppetixerTabView.swift */,
+				2C2439C42A7A254000A4B54B /* AppetizerListView.swift */,
+				2C2439C62A7A255D00A4B54B /* AccountView.swift */,
+				2C2439C82A7A257000A4B54B /* OrderView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2CC224772B2B584E00ED2CD3 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				2C2439D22A7A560600A4B54B /* AppetizerListViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,7 +152,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1430;
-				LastUpgradeCheck = 1430;
+				LastUpgradeCheck = 1510;
 				TargetAttributes = {
 					2C2439B22A7A24CD00A4B54B = {
 						CreatedOnToolsVersion = 14.3.1;
@@ -225,6 +249,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -285,6 +310,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -311,14 +337,15 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Appetizers-App/Preview Content\"";
-				DEVELOPMENT_TEAM = G324H38H35;
+				DEVELOPMENT_TEAM = 2RSSAT6Q24;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -326,9 +353,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "sandeep.hegde.com.Appetizers-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -340,14 +370,15 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Appetizers-App/Preview Content\"";
-				DEVELOPMENT_TEAM = G324H38H35;
+				DEVELOPMENT_TEAM = 2RSSAT6Q24;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -355,9 +386,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "sandeep.hegde.com.Appetizers-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
