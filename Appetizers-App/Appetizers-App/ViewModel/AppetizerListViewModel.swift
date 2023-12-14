@@ -19,7 +19,6 @@ final class ApperizerListViewModel : ObservableObject {
             DispatchQueue.main.async { [self] in
                 isLoading = false
                 switch result {
-                    
                 case .success(let appetizers):
                     self.appetizers = appetizers
                     

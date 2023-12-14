@@ -28,7 +28,7 @@ struct AppetizerTabView: View {
                     Text("Order")
                 }
         }
-        .accentColor(.brandPrimary)
+        .tint(.brandPrimary)
     }
 }
 

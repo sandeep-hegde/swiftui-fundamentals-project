@@ -21,8 +21,6 @@ struct ActivityIndicator: UIViewRepresentable {
 }
 
 
-
-
 struct LoadingView: View {
     var body: some View {
         ZStack {

@@ -21,13 +21,10 @@ struct Appetizer: Decodable, Identifiable {
 }
 
 
-
 // Response object to handle JSON structure
 struct AppetizerResponse: Decodable {
     let request: [Appetizer]
 }
-
-
 
 
 struct MockData {
@@ -35,3 +32,7 @@ struct MockData {
     
     static let appetizer = [sampleAppetizer, sampleAppetizer, sampleAppetizer, sampleAppetizer]
 }
+
+
+
+// JSON URL: https://seanallen-course-backend.herokuapp.com/swiftui-fundamentals/appetizers
