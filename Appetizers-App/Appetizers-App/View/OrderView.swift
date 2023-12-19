@@ -45,6 +45,10 @@ struct OrderView: View {
 
 struct OrderView_Previews: PreviewProvider {
     static var previews: some View {
+        
+        let sampleOrder = Order()
+        
         OrderView()
+            .environmentObject(sampleOrder)
     }
 }
