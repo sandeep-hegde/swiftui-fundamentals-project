@@ -14,3 +14,7 @@ I've included the four projects I created during the course here. My aim is not 
 ## Apple Framework App
 
 ![Apple Framework App](https://github.com/sandeep-hegde/swiftui-fundamentals-project/assets/24915457/e2d9bec2-4b70-4752-a94b-479b4b9ec893)
+
+## Appetizer App
+
+![Appetizer App](https://github.com/sandeep-hegde/swiftui-fundamentals-project/assets/24915457/4e0f1ec6-3994-40c7-bda4-5db2713e9e7f)
