@@ -9,40 +9,40 @@ import SwiftUI
 
 struct AccountView: View {
     
-    @State private var firstName = ""
-    @State private var lastName = ""
-    @State private var email = ""
-    @State private var birthdate = Date()
-    @State private var extraNapikns = false
-    @State private var frequentRefills = false
+    @StateObject var accountViewModel = AccountViewModel()
     
     var body: some View {
         NavigationStack {
             Form {
                 Section("Personal Info") {
-                    TextField("First Name", text: $firstName)
-                    TextField("Last Name", text: $lastName)
-                    TextField("Email", text: $email)
+                    TextField("First Name", text: $accountViewModel.firstName)
+                    TextField("Last Name", text: $accountViewModel.lastName)
+                    TextField("Email", text: $accountViewModel.email)
                         .keyboardType(.emailAddress)
                         .textInputAutocapitalization(.none)
                         .autocorrectionDisabled(true)
                     
-                    DatePicker("Birthday", selection: $birthdate, displayedComponents: .date)
+                    DatePicker("Birthday", selection: $accountViewModel.birthdate, displayedComponents: .date)
                     
                     Button {
-                        print("Save")
+                        accountViewModel.saveChanges()
                     } label: {
                         Text("Save Changes")
                     }
                 }
                 
                 Section("Requests") {
-                    Toggle("Extra Napkins", isOn: $extraNapikns)
-                    Toggle("Frequent Refills", isOn: $frequentRefills)
+                    Toggle("Extra Napkins", isOn: $accountViewModel.extraNapikns)
+                    Toggle("Frequent Refills", isOn: $accountViewModel.frequentRefills)
                 }
                 .tint(.brandPrimary)
             }
             .navigationTitle("🗂️ Account")
+        }
+        .alert(item: $accountViewModel.alertItem) { alertItem in
+            Alert(title: alertItem.title,
+                  message: alertItem.message,
+                  dismissButton: alertItem.dismissButton)
         }
     }
 }
