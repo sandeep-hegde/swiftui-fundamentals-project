@@ -23,6 +23,7 @@
 		2C2439D12A7A4D0600A4B54B /* APError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2439D02A7A4D0600A4B54B /* APError.swift */; };
 		2C2439D32A7A560600A4B54B /* AppetizerListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2439D22A7A560600A4B54B /* AppetizerListViewModel.swift */; };
 		2CC94FBA2B316A2200B7D040 /* RemoteImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC94FB92B316A2100B7D040 /* RemoteImage.swift */; };
+		2CC94FBF2B31705B00B7D040 /* AppetizerDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC94FBE2B31705B00B7D040 /* AppetizerDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +44,7 @@
 		2C2439D02A7A4D0600A4B54B /* APError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APError.swift; sourceTree = "<group>"; };
 		2C2439D22A7A560600A4B54B /* AppetizerListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerListViewModel.swift; sourceTree = "<group>"; };
 		2CC94FB92B316A2100B7D040 /* RemoteImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteImage.swift; sourceTree = "<group>"; };
+		2CC94FBE2B31705B00B7D040 /* AppetizerDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 				2C2439C82A7A257000A4B54B /* OrderView.swift */,
 				2C0607DC2A7F958B00562412 /* LoadingView.swift */,
 				2CC94FB92B316A2100B7D040 /* RemoteImage.swift */,
+				2CC94FBE2B31705B00B7D040 /* AppetizerDetailView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -239,6 +242,7 @@
 				2C2439B72A7A24CD00A4B54B /* Appetizers_AppApp.swift in Sources */,
 				2C2439CF2A7A4B9B00A4B54B /* NetworkManager.swift in Sources */,
 				2CC94FBA2B316A2200B7D040 /* RemoteImage.swift in Sources */,
+				2CC94FBF2B31705B00B7D040 /* AppetizerDetailView.swift in Sources */,
 				2C2439CD2A7A408F00A4B54B /* AppetizerListCellView.swift in Sources */,
 				2C0607DB2A7F8D9B00562412 /* Alert.swift in Sources */,
 				2C2439C52A7A254000A4B54B /* AppetizerListView.swift in Sources */,
