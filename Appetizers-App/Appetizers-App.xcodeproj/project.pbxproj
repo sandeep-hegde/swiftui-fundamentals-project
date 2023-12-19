@@ -110,7 +110,6 @@
 			isa = PBXGroup;
 			children = (
 				2C2439CA2A7A37F100A4B54B /* AppetizerModel.swift */,
-				2CC94FC62B31B6BF00B7D040 /* AccountViewModel.swift */,
 				2CC94FCA2B31BE5A00B7D040 /* User.swift */,
 			);
 			path = Model;
@@ -135,6 +134,7 @@
 			isa = PBXGroup;
 			children = (
 				2C2439D22A7A560600A4B54B /* AppetizerListViewModel.swift */,
+				2CC94FC62B31B6BF00B7D040 /* AccountViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";

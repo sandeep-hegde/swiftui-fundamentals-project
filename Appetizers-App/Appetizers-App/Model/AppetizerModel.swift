@@ -31,6 +31,16 @@ struct MockData {
     static let sampleAppetizer = Appetizer(id: 001, name: "Test Appetizer", description: "This is the description for my appetizer.", price: 9.99, imageURL: "", calories: 100, protein: 9, carbs: 140)
     
     static let appetizer = [sampleAppetizer, sampleAppetizer, sampleAppetizer, sampleAppetizer]
+    
+    
+    //MARK - Sample data for Order View
+    static let orderItemOne = Appetizer(id: 001, name: "Test Appetizer One", description: "This is the description for my appetizer.", price: 9.99, imageURL: "", calories: 100, protein: 9, carbs: 140)
+    
+    static let orderItemTwo = Appetizer(id: 002, name: "Test Appetizer Two", description: "This is the description for my appetizer.", price: 9.99, imageURL: "", calories: 100, protein: 9, carbs: 140)
+    
+    static let orderItemThree = Appetizer(id: 003, name: "Test Appetizer Three", description: "This is the description for my appetizer.", price: 9.99, imageURL: "", calories: 100, protein: 9, carbs: 140)
+    
+    static let orderItems = [orderItemOne, orderItemTwo, orderItemThree]
 }
 
 
